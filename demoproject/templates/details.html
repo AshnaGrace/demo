@@ -1,0 +1,12 @@
+<div>
+    {{product.name}}
+<br>
+<img src="{{product.img.url}}" alt="" style="width:300px;height:300px;">
+<br>
+{{product.desc}}
+{{product.price}}<br>
+
+<a class="btn btn-success" href="{% url 'update' product.id %}">UPDATE</a>
+    <div>
+        <a class="btn btn-danger" href="{% url 'delete' product.id %}">Delete</a>
+</div>
